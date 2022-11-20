@@ -64,23 +64,35 @@ Integration (run back-end & front-end on same server/port)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Set port
-.env
+---
+
+&nbsp;
+
+### Set up environment variables
+
+Rename `.env.example` to `.env` and change its environment variable values as you want:
 ```
+# Port that the hot-reload use to run this React app.
+# Note that the backend needs to allow CORS to this port as well.
 PORT=8081
+
+# Base URL for Backend API
+REACT_APP_BACKEND_BASE_URL=http://localhost:8080/api
 ```
+
+---
+
+&nbsp;
 
 ## Project setup
 
-In the project directory, you can run:
+### In the project directory, you can run:
 
 ```
 npm install
 # or
 yarn install
 ```
-
-or
 
 ### Compiles and hot-reloads for development
 
@@ -93,3 +105,5 @@ yarn start
 Open [http://localhost:8081](http://localhost:8081) to view it in the browser.
 
 The page will reload if you make edits.
+
+---
